@@ -4,17 +4,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .contador{
-    display: grid;
-    place-items: center;
-    border: solid 1px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Old Standard TT', serif;
     height: 100px;
     width: 100px;
-    border-radius: 50%;
-    color: white;
-    font-size: 2rem;
+    color: black;
     font-weight: bold;
-    background-color: blue;
+    background-color: transparent;
 }
+

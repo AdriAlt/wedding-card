@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    font-family: 'Old Standard TT', serif;
+}
+
+.text{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.header-logo{
+    font-family: 'Great Vibes', cursive;
+    font-size: 34px;
+}
+
+.animation-img{
+    animation: scale-img 5s infinite ;
+
+}
+
+@keyframes scale-img {
+
+    0%{
+        transform: scale(1);
+        opacity: .3;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    
+}
+
+.count-value{
+    font-size: 54px !important;
+    font-weight: 400;
+}
+
+.count-point{
+    margin-bottom: 50px;
+}
+
+.count-text{
+    font-size: 11px !important;
+}
+
+.card-text{
+    top: 50%;
+    bottom: auto;
+    right: 50px;
+    transform: translateY(-50%);
+    border-radius: 25px;
+    background-color: aqua;
+}
+
+.size-img{
+    width: 400px;
+    max-width: 100%;
+    aspect-ratio: auto 400 / 516;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .size-img{
+        margin: 0 2% 2% 0;
+        width: 48%;
+    }
+}

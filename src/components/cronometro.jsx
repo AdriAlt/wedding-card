@@ -36,18 +36,29 @@ const Cronometro = () => {
         <div className="flex flex-column flex-center">
 
             <div className='width-100% text-center'>
-                <p className='text-uppercase'>save the date</p>
-                <p>9 de octubre</p>
+                <p className='text-uppercase text'>save the date</p>
+                <p className='title text-xxl'>9 de octubre</p>
             </div>
 
             <div className={styles.cronometro}>
-                <div className={styles.contador}>{ days }</div>
-                <div>:</div>
-                <div className={styles.contador}>{ hours }</div>
-                <div>:</div>
-                <div className={styles.contador}>{ minutes }</div>
-                <div>:</div>
-                <div className={styles.contador}>{ seconds }</div>
+                <div className={styles.contador}>
+                    <p className='count-value'>{ days }</p>
+                    <p className='count-text'>Día(s)</p></div>
+                <div className='count-text count-point'>:</div>
+                <div className={styles.contador}>
+                <p className='count-value'>{ hours }</p>
+                    <p className='count-text'>Hora(s)</p>
+                </div>
+                <div className='count-text count-point'>:</div>
+                <div className={styles.contador}>
+                <p className='count-value'>{ minutes }</p>
+                    <p className='count-text'>Minuto(s)</p>
+                </div>
+                <div className='count-text count-point'>:</div>
+                <div className={styles.contador}>
+                <p className='count-value'>{ seconds }</p>
+                    <p className='count-text'>Segundo(s)</p>
+                </div>
             </div>
 
             <div className='padding-top-md'>

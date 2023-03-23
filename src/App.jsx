@@ -10,6 +10,7 @@ import Redes from './components/redes'
 import Regalos from './components/regalos'
 import Alojamiento from './components/alojamiento'
 import Asistencia from './components/asistencia'
+import './assets/css/style.css'
 
 function App() {
   return (
