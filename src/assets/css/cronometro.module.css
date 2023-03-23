@@ -1,0 +1,20 @@
+.cronometro {
+    font-size: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador{
+    display: grid;
+    place-items: center;
+    border: solid 1px white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: blue;
+}
