@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import styles from '../assets/css/cronometro.module.css'
+import styles from '../../assets/css/cronometro.module.css'
+import AgendarFecha from '../Agendar/AgendarFecha'
   
   
 const Cronometro = () => {
@@ -13,7 +14,7 @@ const Cronometro = () => {
 
     setInterval(() =>{
         const diaInicio = new Date().getTime();
-        const diaFinal = new Date('dec 25, 2023 00:00:00').getTime();
+        const diaFinal = new Date('nov 19, 2023 19:30:00').getTime();
         const distance = diaFinal - diaInicio;
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours =  '0' + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)); 
